@@ -103,7 +103,6 @@ def filtriraj_zaposlenike():
         if v is not None:
             zaposlenici = zaposlenici.filter(**{k: v})
 
-    # Prikaz rezultata
     rezultati = []
     for zaposlenik in zaposlenici:
         rezultati.append({
@@ -114,7 +113,6 @@ def filtriraj_zaposlenike():
             'placa': zaposlenik.placa
         })
 
-    # Provjeri jesu li pronađeni rezultati
     if not rezultati:
         return jsonify({'message': 'Nema zaposlenika koji zadovoljavaju zadane uvjete.'})
 
