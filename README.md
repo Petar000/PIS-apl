@@ -20,7 +20,7 @@ Ako nemate instaliran Docker Desktop, potrebno ga je instalirati putem linka: ht
 
 Nakon što ste klonirali repozitorij, otvorite terminal i navigirajte do direktorija projekta. Zatim izvršite sljedeću naredbu kako biste izgradili Docker image:
 
-docker build -t pis-docker 
+docker build -t pis-docker .
 
 Na ovaj način ćete izraditi docker image s nazivom "pis-docker" koristeći Dockerfile koji se nalazi u direktoriju projekta.
 
