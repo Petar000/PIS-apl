@@ -28,7 +28,7 @@ Na ovaj način ćete izraditi docker image s nazivom "pis-docker" koristeći Doc
 
 Nakon što ste uspješno izgradili Docker image, možete pokrenuti Docker kontejner slijedećom naredbom:
 
-docker tun -p 5000:5000 pis-docker
+docker run -p 5000:5000 pis-docker
 
 Ovo će pokrenuti Docker kontejner temeljen na prethodno izgrađenom Docker image-u i omogućiti pristup aplikaciji putem HTTP na portu 5000.
 
