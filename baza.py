@@ -10,7 +10,7 @@ class Zaposlenici(db.Entity):
     pozicija = Required(str)
     placa = Required(float)
 
-db.bind(provider='sqlite', filename='C:\\Users\\Petar Vukovic\\Desktop\\PIS-baza\\pisprojekt.db', create_db=False)
+db.bind(provider='sqlite', filename='pisprojekt.db', create_db=False)
 
 
 try:
